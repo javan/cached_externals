@@ -7,7 +7,7 @@
 # with this file for the complete text of the license.
 # ---------------------------------------------------------------------------
 
-Capistrano::Configuration.instance.load do
+Capistrano::Configuration.instance(:must_exist).load do
   # The :external_modules variable is used internally to load and contain the
   # contents of the config/externals.yml file. Although you _could_ set the
   # variable yourself (to bypass the need for a config/externals.yml file, for
